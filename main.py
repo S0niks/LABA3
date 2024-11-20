@@ -41,7 +41,7 @@ class CreditCalculator:
         Годовая процентная ставка {self.R} %
         Итоговая сумма выплат = {result} руб;   Начисленные проценты = {P} руб
         """)
-        return result
+        return round(result, 2)
 
     def compare(self):
         A = self.calc_ann_credit(flag=False)
